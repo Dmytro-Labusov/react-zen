@@ -37,6 +37,7 @@ export default function App() {
       />
       <InboxStatus username="Понтий Понтович" unreadMessages={[]} />
       <AuthorList />
+      <AuthorList />
     </div>
   );
 }
