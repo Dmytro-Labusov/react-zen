@@ -4,6 +4,7 @@
   margin-right: 8px;
   transition: transform 0.2s ease;
   color: #ffab61;
+  font-size: 20px;
 }
 
 .bookmark-icon:hover {
