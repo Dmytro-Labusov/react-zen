@@ -1,3 +1,7 @@
+import { FaBook } from 'react-icons/fa';
+import { PiBookmark } from 'react-icons/pi';
+import './AuthorsApp.css';
+
 const favAuthors = [
   { id: 'id-1', name: 'Marcus Aurelius' },
   { id: 'id-2', name: 'Ernest Hamingway' },
@@ -16,7 +20,12 @@ const AuthorsList = ({ authors }) => {
   return (
     <ul>
       {authors.map((author) => {
-        return <li key={author.id}>{author.name}</li>;
+        return (
+          <li key={author.id}>
+            <PiBookmark className="bookmark-icon" />
+            {author.name}
+          </li>
+        );
       })}
     </ul>
   );
@@ -25,7 +34,9 @@ const AuthorsList = ({ authors }) => {
 const AuthorsApp = () => {
   return (
     <div>
-      <h1>Самые жеские авторы</h1>
+      <h1>
+        <FaBook /> Самые жеские авторы
+      </h1>
       <AuthorsList authors={favAuthors} />
     </div>
   );
