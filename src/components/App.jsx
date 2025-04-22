@@ -3,7 +3,7 @@ import AnimalCardResult from './Animal';
 import Mailbox from './Mailbox';
 import InboxStatus from './InboxStatus';
 import AuthorList from './AuthorList';
-import Alert from './alert';
+import Alert from './Alert';
 
 const alertStyles = {
   backgroundColor: 'purple',
